@@ -1,0 +1,41 @@
+{
+  "name": "healthpoint-finder",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Google Maps healthcare finder powered by Healthpoint NZ",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n client,api -c cyan,magenta \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "vite",
+    "dev:server": "tsx watch server/src/index.ts",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "tsc -b && vite build",
+    "build:server": "tsc -p server/tsconfig.json",
+    "start": "node server/dist/index.js",
+    "preview": "vite preview",
+    "a11y:test": "node scripts/a11y-audit.mjs",
+    "a11y:static": "node scripts/a11y-static.mjs"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.80.7",
+    "@vis.gl/react-google-maps": "^1.5.3",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^22.15.32",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "@vitejs/plugin-react": "^4.5.2",
+    "concurrently": "^9.1.2",
+    "pa11y": "^8.0.0",
+    "tsx": "^4.20.3",
+    "typescript": "~5.8.3",
+    "vite": "^6.3.5"
+  }
+}

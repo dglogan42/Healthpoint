@@ -1,0 +1,68 @@
+import type { EssentialHelpline } from "../types.js";
+
+export const ESSENTIAL_HELPLINES: EssentialHelpline[] = [
+  {
+    id: "emergency-111",
+    name: "Emergency",
+    number: "111",
+    description: "Police, Fire, Ambulance",
+    category: "emergency",
+    available: "24/7",
+  },
+  {
+    id: "healthline",
+    name: "Healthline",
+    number: "0800611116",
+    description: "Free health advice & nurse triage",
+    category: "health",
+    available: "24/7",
+  },
+  {
+    id: "1737",
+    name: "Need to Talk?",
+    number: "1737",
+    description: "Free call or text — mental health support",
+    category: "mental-health",
+    available: "24/7",
+  },
+  {
+    id: "lifeline",
+    name: "Lifeline",
+    number: "0800543354",
+    description: "Suicide crisis & emotional support",
+    category: "crisis",
+    available: "24/7",
+  },
+  {
+    id: "youthline",
+    name: "Youthline",
+    number: "0800376633",
+    description: "Support for young people",
+    category: "mental-health",
+    available: "24/7",
+  },
+  {
+    id: "depression",
+    name: "Depression Helpline",
+    number: "0800111757",
+    description: "Talk to a trained counsellor",
+    category: "mental-health",
+    available: "24/7",
+  },
+  {
+    id: "alcohol-drug",
+    name: "Alcohol & Drug Helpline",
+    number: "0800787799",
+    description: "Confidential addiction support",
+    category: "crisis",
+    available: "24/7",
+  },
+  {
+    id: "samaritans",
+    name: "Samaritans",
+    number: "0800726666",
+    description: "Confidential emotional support",
+    category: "crisis",
+    available: "24/7",
+  },
+];
